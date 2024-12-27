@@ -7,8 +7,6 @@ import { data } from './data';
 
 function App() {
   let[todolist , setTodolist] = useState([])
-  let[active,setActive] = useState(0)
-  let[disc, setDisc] = useState(data[0])
 
   let saveToDolist = (event)=>
     {
@@ -32,41 +30,11 @@ function App() {
       <ToDoListItems value ={val} key={i} indexNumber = {i} todolist={todolist} setTodolist={setTodolist}/>
     ) 
    })
-
-
-   
-  // let btn = data.map((val,i)=>{
-  //   function toSet ()
-  //   {
-  //     setActive(i);
-  //     setDisc(data[i]);
-  //   }
-  //    return(
-  //     <button  onClick={toSet} className = {i == active ?'activeButtons':''} > {val.title} </button>
-     
-  //    )
-  // })
-
   
-   
 
   return (
 
     <div className="App">
-
-    
-
-      {/* Active Tabs */}
-      {/* <div className="activeTabs">
-        <div className="btns">
-         {btn}
-        </div>
-
-        <div className="content" >
-        <p>{disc.discription}</p>
-        </div>
-        
-      </div> */}
 
     {/* ToDoList */}
     <NotificationContainer/>
