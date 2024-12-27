@@ -36,3 +36,108 @@
     transform: rotate(360deg);
   }
 }
+
+form
+{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+form input
+{
+  flex-basis: 80%;
+  height: 40px;
+}
+form button
+{
+  flex-basis: 20%;
+  background-color: blue;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+}
+.outerDiv
+{
+  width: 1170px;
+  margin: auto;
+}
+.outerDiv ul
+{
+  margin: 0px;
+  margin-top:50px;
+  padding: 0px;
+  list-style: none;
+  
+}
+.outerDiv ul li
+{
+   background-color: black;
+   color: white;
+   padding: 10px;
+   margin-bottom: 20px;
+   position: relative;
+   font-size: 25px;
+   text-align: left;
+   
+}
+.outerDiv ul li span
+{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.completeTodo
+{
+  text-decoration: line-through;
+  color: red !important;
+  background-color: yellow !important;
+}
+
+/* ActiveTabs */
+.activeTabs
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+  
+
+}
+.btns
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  left: 0px;
+  width: 1170px;
+  
+}
+.btns button
+{
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: rgba(192, 188, 188, 0.771);
+}
+.content
+{ 
+  position: relative;
+  width: 1170px;
+  margin: auto;
+  padding: 5px;
+  left: 0px;
+  
+  text-align: left;
+}
+.activeButtons
+{
+  background-color: red !important;
+  color: white !important;
+}
